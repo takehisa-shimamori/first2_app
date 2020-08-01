@@ -36,8 +36,8 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         title: Text(widget.title),
       ),
-
       body: Center(
+      child: SingleChildScrollView(
         child: Padding(
           padding: EdgeInsets.all(30.0),
           child: Column(
@@ -46,11 +46,128 @@ class _MyHomePageState extends State<MyHomePage> {
               Container(
                 child: Align(
                   alignment: Alignment.centerLeft,
-                  child: Image.asset('images/sample.jpg'),
+                  child: Image.asset('images/sample2.jpeg'),
                 ),
+              ),
+              Container(
+                child: Align(
+                  alignment: Alignment.centerLeft,
+                  child: Text('氏名',
+                    style:  TextStyle(fontWeight: FontWeight.normal),
+                  ),
+                ),
+
+              ),
+              Container(
+                child: Align(
+                  alignment: Alignment.centerLeft,
+                  child: Text('島森 武久',
+                    style:  TextStyle(fontWeight: FontWeight.bold,
+                    fontSize: 17),
+                  ),
+                ),
+
+              ),
+             Padding(
+              padding: EdgeInsets.only(top: 7.0),
+              child:
+              Container(
+                child: Align(
+                  alignment: Alignment.centerLeft,
+                  child: Text('CC名',
+                    style:  TextStyle(fontWeight: FontWeight.normal),
+                  ),
+                ),
+
+              ),
+             ),
+              Container(
+                child: Align(
+                  alignment: Alignment.centerLeft,
+                  child: Text('SHANTI SHANTI',
+                    style:  TextStyle(fontWeight: FontWeight.bold,
+                        fontSize: 17),
+                  ),
+                ),
+
+              ),
+
+              Padding(
+                padding: EdgeInsets.only(top: 7.0),
+                child:
+                Container(
+                  child: Align(
+                    alignment: Alignment.centerLeft,
+                    child: Text('現役3年',
+                      style:  TextStyle(fontWeight: FontWeight.normal),
+                    ),
+                  ),
+
+                ),
+              ),
+              Container(
+                child: Align(
+                  alignment: Alignment.centerLeft,
+                  child: Text('2020年卒業予定',
+                    style:  TextStyle(fontWeight: FontWeight.bold,
+                        fontSize: 17),
+                  ),
+                ),
+
+              ),
+              Padding(
+                padding: EdgeInsets.only(top: 7.0),
+                child:
+                Container(
+                  child: Align(
+                    alignment: Alignment.centerLeft,
+                    child: Text('派遣経験',
+                      style:  TextStyle(fontWeight: FontWeight.normal),
+                    ),
+                  ),
+
+                ),
+              ),
+              Container(
+                child: Align(
+                  alignment: Alignment.centerLeft,
+                  child: Text('2020年 夏 カンボジア\n2021年 夏 フィリピン',
+                    style:  TextStyle(fontWeight: FontWeight.bold,
+                        fontSize: 17),
+                  ),
+                ),
+
+              ),
+
+              Padding(
+                padding: EdgeInsets.only(top: 7.0),
+                child:
+                Container(
+                  child: Align(
+                    alignment: Alignment.centerLeft,
+                    child: Text('職歴',
+                      style:  TextStyle(fontWeight: FontWeight.normal),
+                    ),
+                  ),
+
+                ),
+              ),
+              Container(
+                child: Align(
+                  alignment: Alignment.centerLeft,
+                  child: Text('楽天株式会社',
+                    style:  TextStyle(fontWeight: FontWeight.bold,
+                        fontSize: 17),
+                  ),
+                ),
+
               ),
 
 
+
+        Padding(
+          padding: EdgeInsets.only(top: 25.0),
+          child:
               FlatButton(
                 onPressed: _handlePressed,
                 color: Colors.blue,
@@ -58,13 +175,14 @@ class _MyHomePageState extends State<MyHomePage> {
                     borderRadius: BorderRadius.circular(20.0)
                 ),
                 child: Text(
-                  '質問を送る',
+                  ' 質問を送る ',
                   style: TextStyle(
                       color:Colors.white,
                       fontSize: 20.0
                   ),
                 ),
               ),
+        ),
               FlatButton(
                 onPressed: _handlePressed,
                 color: Colors.blue,
@@ -72,7 +190,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     borderRadius: BorderRadius.circular(20.0)
                 ),
                 child: Text(
-                  '回答を見る',
+                  ' 回答を見る ',
                   style: TextStyle(
                       color:Colors.white,
                       fontSize: 20.0
@@ -93,11 +211,19 @@ class _MyHomePageState extends State<MyHomePage> {
                   ),
                 ),
               ),
+              Container(
+                child: Align(
+                  alignment: Alignment.centerLeft,
+                  child: Image.asset('images/sns.png'),
+                ),
+              ),
             ],
           ),
         ),
       ),
+      ),
     );
+
   }
 }
 

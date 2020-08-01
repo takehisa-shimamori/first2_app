@@ -46,6 +46,8 @@ flutter:
 
   assets:
     - images/sample.jpg
+    - images/sample2.jpeg
+    - images/sns.png
 
   # To add assets to your application, add an assets section, like this:
   # assets:
